@@ -80,7 +80,9 @@ int main(void)
 		// Ausgabe des Resultats
 		if (fehler == 0)
 		{
-			printf("\n%.2f %c %.2f = %.2f\n\n", var1, operation, var2, resultat);
+			printf("\n%.4f %c %.4f = %.4f\n\n", var1, operation, var2, resultat); /*.2f begrenzt Kommastellen %2d zeigt Zahlen untereinander an 
+																				  Das Anführungszeichen beendet den String deshalb muss eine Anführungszeichen mit einem Backslash gezeichnet werden
+																				   D.h. "C:\norton" -> C: [neue Zeile] norton */
 		}
 		// Noch eine Berechung?
 		printf("Wollen Sie noch eine Berechnung durchfuehren?\n");
